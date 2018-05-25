@@ -21,7 +21,7 @@ class Numpan extends Panel implements ActionListener{
 	String op_flag;
 	String data;
 	double dop1,dop2,dresult;
-	boolean flag_advanced;
+	boolean flag_advanced=true;
 	public Numpan(TextField display) {
 		this.display = display;
 		setLayout(new GridLayout(0,4));
