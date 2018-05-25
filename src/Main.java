@@ -12,6 +12,7 @@ import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 
 class Numpan extends Panel implements ActionListener{
+	
 	Button n0,n1,n2,n3,n4,n5,n6,n7,n8,n9,point,equal;
 	Button plus,minus,multiply, divide;
 	Button m_plus,m_minus,clear,advanced; 
@@ -142,8 +143,10 @@ class Numpan extends Panel implements ActionListener{
 		if(toAdvanced){
 			plus.setLabel("sin");
 			plus.setActionCommand("sin");
+			//System.out.println("cos in");
 			minus.setLabel("cos");
 			minus.setActionCommand("cos");
+			//System.out.println("cos out");
 			multiply.setLabel("tan");
 			multiply.setActionCommand("tan");
 			divide.setLabel("log");
@@ -153,7 +156,7 @@ class Numpan extends Panel implements ActionListener{
 		else{
 			plus.setLabel("+");
 			plus.setActionCommand("plus");
-			minus = new Button("-");
+			minus.setLabel("-");
 			minus.setActionCommand("minus");
 			multiply.setLabel("x");
 			multiply.setActionCommand("multiply");
